@@ -1,8 +1,8 @@
 package main
 
 import (
+	functions "Math-Skills/Functions"
 	"fmt"
-	functions "math-skills/Functions"
 	"os"
 )
 

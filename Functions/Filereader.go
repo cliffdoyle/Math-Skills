@@ -2,6 +2,7 @@ package functions
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -16,7 +17,8 @@ func Reader(filename string) []int {
 	file, err := os.Open(filename)
 
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 	defer file.Close()
 
