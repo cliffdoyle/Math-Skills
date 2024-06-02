@@ -2,9 +2,9 @@ package functions
 
 import "sort"
 
-//Median calculates the median of a slice of integers.
+// Median calculates the median of a slice of integers.
 func Median(data []int) float64 {
-
+	//Sort the data in ascending order
 	sort.Ints(data)
 
 	n := len(data)
